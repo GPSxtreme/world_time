@@ -15,6 +15,7 @@ class _LoadingState extends State<Loading> {
 
   void getTime() async{
     String apiEndPoint = "https://worldtimeapi.org/api/timezone/Asia/Kolkata";
+    //all the time zones for referece : https://worldtimeapi.org/timezones
     Uri url = Uri.parse(apiEndPoint);
     Response response = await get(url);
     Map data = jsonDecode(response.body);
