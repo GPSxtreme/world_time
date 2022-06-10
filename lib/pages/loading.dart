@@ -18,14 +18,21 @@ class _LoadingState extends State<Loading> {
     Uri url = Uri.parse(apiEndPoint);
     Response response = await get(url);
     Map data = jsonDecode(response.body);
+    print(data['datetime']);
     //get properties from data
     String dateTime = data['utc_datetime'];
     String offSetHour = data['utc_offset'].substring(1,3);
     String offSetMin = data['utc_offset'].substring(4,6);
+    //check if off set is negative
+    String offSetType = data['utc_offset'][0];
     //create datetime obj
     DateTime now = DateTime.parse(dateTime);
-    now = now.add(Duration(hours: int.parse(offSetHour)));
-    if(int.parse(offSetMin)>0) now = now.add(Duration(minutes: int.parse(offSetMin)));
+    if(int.parse(offSetHour)>0 && offSetType == '+') {
+      now = now.add(Duration(minutes: int.parse(offSetMin),hours: int.parse(offSetHour)));
+    }
+    if(int.parse(offSetHour)>0 && offSetType == '-') {
+      now = now.subtract(Duration(minutes: int.parse(offSetMin),hours: int.parse(offSetHour)));
+    }
     print(now);
   }
 
