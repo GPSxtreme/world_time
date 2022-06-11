@@ -17,12 +17,12 @@ class _ChooseLocationState extends State<ChooseLocation> {
     worldTime instance = listOfAllLocations[index];
     await instance.getTime();
     //navigate to home screen
-    Navigator.pop(context,{'location': instance.location,'flag': instance.flag,'time':instance.time,'isDay':instance.isDay});
+    Navigator.pop(context,{'location': instance.location,'flag': instance.flag,'time':instance.time,'isDay':instance.isDay,'dayOfWeek':instance.dayOfWeek,'dayOfYear':instance.dayOfYear,'weekNo':instance.weekNo});
   }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey.shade200,
+      backgroundColor: Colors.grey.shade600,
       appBar: AppBar(
         title: Text('Choose Location',style: TextStyle(color: Colors.amberAccent),),
         centerTitle: true,
@@ -33,11 +33,12 @@ class _ChooseLocationState extends State<ChooseLocation> {
           itemCount: listOfAllLocations.length,
           itemBuilder: (context,index){
             return Card(
+              color: Colors.grey.shade900,
               child: ListTile(
                 onTap: (){
                   updateTime(index);
                 },
-                title: Text(listOfAllLocations[index].location),
+                title: Text(listOfAllLocations[index].location,style: TextStyle(color: Colors.grey.shade100,letterSpacing: 1.5,fontWeight: FontWeight.w300),),
               ),
             );
           },

@@ -1,3 +1,5 @@
+// ignore_for_file: camel_case_types
+
 import 'package:http/http.dart';
 import 'dart:convert';
 import 'package:intl/intl.dart';
@@ -8,6 +10,9 @@ class worldTime{
   late String time;//the time in that location
   String flag;//url to an asset logo
   String locationUrl;//location url
+  late String dayOfWeek;
+  late String dayOfYear;
+  late String weekNo;
   late bool isDay;
   //constructor
   worldTime({required this.location,required this.flag,required this.locationUrl});
@@ -24,6 +29,11 @@ class worldTime{
       String dateTime = data['utc_datetime'];
       String offSetHour = data['utc_offset'].substring(1,3);
       String offSetMin = data['utc_offset'].substring(4,6);
+      //set days thing
+      dayOfWeek = data['day_of_week'];
+      //print(dayOfWeek);
+      dayOfYear = data['day_of_year'];
+      weekNo = data['week_number'];
       //check if off set is negative
       String offSetType = data['utc_offset'][0];
       //create datetime obj

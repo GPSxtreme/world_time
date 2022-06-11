@@ -19,6 +19,7 @@ class _HomeState extends State<Home> {
   late String bgImg;
   late Color bgColor;
   late Color fontColor;
+  late Color timeColor;
 
   @override
   Widget build(BuildContext context) {
@@ -27,6 +28,7 @@ class _HomeState extends State<Home> {
       bgImg = data['isDay'] ? 'day.jpg':'night.jpg'; //setting background image
       bgColor = data['isDay'] ? Colors.blue.shade300 : Colors.grey.shade900;//setting background colour
       fontColor = data['isDay'] ? Colors.grey.shade900:Colors.grey.shade700;//setting font color
+      timeColor = data['isDay'] ? Colors.grey.shade800:Colors.amber;//setting font color
     }
 
     return Scaffold(
@@ -37,7 +39,7 @@ class _HomeState extends State<Home> {
               image: DecorationImage(image: AssetImage('assets/$bgImg'),fit: BoxFit.cover ),
             ),
             child: Padding(
-              padding: const EdgeInsets.fromLTRB(0, 120, 0, 0),
+              padding: const EdgeInsets.fromLTRB(0, 60, 0, 0),
               child: Column(
                 children: <Widget>[
                   TextButton.icon(onPressed: ()async{
@@ -48,7 +50,10 @@ class _HomeState extends State<Home> {
                           'time': result['time'],
                           'location': result['location'],
                           'isDay': result['isDay'],
-                          'flag': result['flag']
+                          'flag': result['flag'],
+                          'dayOfWeek':result['dayOfWeek'],
+                          'dayOfYear':result['dayOfYear'],
+                          'weekNo':result['weekNo']
                         };
                       });
                     }
@@ -62,9 +67,9 @@ class _HomeState extends State<Home> {
                       Text(
                           data['location']!,
                           style: TextStyle(
-                            fontWeight: FontWeight.w400,
-                            fontSize: 28,
-                            letterSpacing: 2.0,
+                            fontWeight: FontWeight.w300,
+                            fontSize: 35,
+                            letterSpacing: 3.0,
                             color: fontColor,
                           ),
                       ),
@@ -74,10 +79,43 @@ class _HomeState extends State<Home> {
                   Text(
                     data['time']!,
                     style: TextStyle(
-                      fontWeight: FontWeight.w400,
-                      fontSize: 58,
+                      fontWeight: FontWeight.w600,
+                      fontSize: 60,
                       letterSpacing: 2.0,
-                      color: Colors.amber,
+                      color: timeColor,
+                    ),
+                  ),
+                  SizedBox(height: 30,),
+                  Center(
+                    child: Card(
+                        color: Colors.grey.shade800,
+                        shadowColor: Colors.white,
+                        elevation: 200,
+                        shape: RoundedRectangleBorder(
+                          side: BorderSide(
+                            color: Colors.grey.shade800,
+                          ),
+                          borderRadius: BorderRadius.all(Radius.circular(18))
+                        ),
+                        child: SizedBox(
+                          width: 300,
+                          height: 400,
+                          child: Container(
+                            padding: EdgeInsets.fromLTRB(0, 30, 0, 0),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                              children: <Widget>[
+                                Text('DAY OF THE WEEK',style: TextStyle(fontSize: 20,color: Colors.grey.shade300,letterSpacing: 2,fontWeight: FontWeight.w300),),
+                                SizedBox(height: 30,),
+                                Text(data['dayOfWeek'],style: TextStyle(fontSize: 30,color: Colors.amber,fontWeight: FontWeight.w400),),
+                                Text('DAY OF YEAR',style: TextStyle(fontSize: 20,color: Colors.grey.shade300,letterSpacing: 2,fontWeight: FontWeight.w300),),
+                                SizedBox(height: 30,),
+                                Text('WEEK NUMBER',style: TextStyle(fontSize: 20,color: Colors.grey.shade300,letterSpacing: 2,fontWeight: FontWeight.w300),),
+                              ],
+                            ),
+                          ),
+                    )
                     ),
                   )
                 ],

@@ -18,7 +18,7 @@ class _LoadingState extends State<Loading> {
     worldTime instance = worldTime(location: 'Kolkata', flag: 'india.png', locationUrl: 'Asia/Kolkata');
     await instance.getTime();
     await allTimeZonesReturner().returnAllTimeZones(listOfAllLocations);
-    Navigator.pushReplacementNamed(context, '/home',arguments: {'location': instance.location,'flag': instance.flag,'time':instance.time,'isDay':instance.isDay});
+    Navigator.pushReplacementNamed(context, '/home',arguments: {'location': instance.location,'flag': instance.flag,'time':instance.time,'isDay':instance.isDay,'dayOfWeek':instance.dayOfWeek,'dayOfYear':instance.dayOfYear,'weekNo':instance.weekNo});
   }
 
   @override
