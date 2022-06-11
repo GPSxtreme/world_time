@@ -10,9 +10,9 @@ class worldTime{
   late String time;//the time in that location
   String flag;//url to an asset logo
   String locationUrl;//location url
-  late String dayOfWeek;
-  late String dayOfYear;
-  late String weekNo;
+  late dynamic dayOfWeek;
+  late dynamic dayOfYear;
+  late dynamic weekNo;
   late bool isDay;
   //constructor
   worldTime({required this.location,required this.flag,required this.locationUrl});
@@ -31,6 +31,22 @@ class worldTime{
       String offSetMin = data['utc_offset'].substring(4,6);
       //set days thing
       dayOfWeek = data['day_of_week'];
+      //shit code ngl(dunno how switch works in this shit language)
+      if(dayOfWeek == 0) {
+        dayOfWeek = 'SUNDAY';
+      }else if(dayOfWeek == 1){
+        dayOfWeek = 'MONDAY';
+      }else if(dayOfWeek == 2){
+        dayOfWeek = 'TUESDAY';
+      }else if(dayOfWeek == 3){
+        dayOfWeek = 'WEDNESDAY';
+      }else if(dayOfWeek == 4){
+        dayOfWeek = 'THURSDAY';
+      }else if(dayOfWeek == 5){
+        dayOfWeek = 'FRIDAY';
+      }else {
+        dayOfWeek = 'SATURDAY';
+      }
       //print(dayOfWeek);
       dayOfYear = data['day_of_year'];
       weekNo = data['week_number'];

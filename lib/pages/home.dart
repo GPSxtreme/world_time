@@ -68,7 +68,7 @@ class _HomeState extends State<Home> {
                           data['location']!,
                           style: TextStyle(
                             fontWeight: FontWeight.w300,
-                            fontSize: 35,
+                            fontSize: 25,
                             letterSpacing: 3.0,
                             color: fontColor,
                           ),
@@ -107,11 +107,11 @@ class _HomeState extends State<Home> {
                               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                               children: <Widget>[
                                 Text('DAY OF THE WEEK',style: TextStyle(fontSize: 20,color: Colors.grey.shade300,letterSpacing: 2,fontWeight: FontWeight.w300),),
-                                SizedBox(height: 30,),
-                                Text(data['dayOfWeek'],style: TextStyle(fontSize: 30,color: Colors.amber,fontWeight: FontWeight.w400),),
+                                Text(data['dayOfWeek'].toString(),style: TextStyle(fontSize: 30,color: Colors.amber,fontWeight: FontWeight.w400,letterSpacing: 2),),
                                 Text('DAY OF YEAR',style: TextStyle(fontSize: 20,color: Colors.grey.shade300,letterSpacing: 2,fontWeight: FontWeight.w300),),
-                                SizedBox(height: 30,),
+                                Text(data['dayOfYear'].toString(),style: TextStyle(fontSize: 35,color: Colors.amber,fontWeight: FontWeight.w400,letterSpacing: 1.5),),
                                 Text('WEEK NUMBER',style: TextStyle(fontSize: 20,color: Colors.grey.shade300,letterSpacing: 2,fontWeight: FontWeight.w300),),
+                                Text(data['weekNo'].toString(),style: TextStyle(fontSize: 35,color: Colors.amber,fontWeight: FontWeight.w400,letterSpacing: 1.5),),
                               ],
                             ),
                           ),
