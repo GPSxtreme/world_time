@@ -20,18 +20,14 @@ class _HomeState extends State<Home> {
   late Color bgColor;
   late Color fontColor;
 
+  @override
   Widget build(BuildContext context) {
     data = data.isNotEmpty? data: ModalRoute.of(context)?.settings.arguments as Map;
-    void isDayChecker() async{
-      worldTime instance = worldTime(location: data['location'], flag: data['flag'], locationUrl: data['locationUrl']);
-      data['isDay'] = instance.isDay;
-      print(data['isDay']);
-    }
     if(data['isDay']!=null){
       bgImg = data['isDay'] ? 'day.jpg':'night.jpg'; //setting background image
       bgColor = data['isDay'] ? Colors.blue.shade300 : Colors.grey.shade900;//setting background colour
       fontColor = data['isDay'] ? Colors.grey.shade900:Colors.grey.shade700;//setting font color
-    };
+    }
 
     return Scaffold(
       backgroundColor:bgColor,
@@ -51,7 +47,7 @@ class _HomeState extends State<Home> {
                         data = {
                           'time': result['time'],
                           'location': result['location'],
-                          'isDaytime': result['isDaytime'],
+                          'isDay': result['isDay'],
                           'flag': result['flag']
                         };
                       });

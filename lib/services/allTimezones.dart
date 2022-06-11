@@ -22,7 +22,7 @@ class allTimeZonesReturner {
           nameSubString = nameSubString.replaceAll('_',' ');
           nameSubString = nameSubString.replaceAll('/', ' ');
           list.add(worldTime(location: nameSubString,
-              flag: ' ',
+              flag: '$nameSubString.png',
               locationUrl: name));
         }
       }
