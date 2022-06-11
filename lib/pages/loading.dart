@@ -1,9 +1,10 @@
-// ignore_for_file: prefer_const_constructors, avoid_print
+// ignore_for_file: prefer_const_constructors, avoid_print, use_build_context_synchronously
 
 import 'package:flutter/material.dart';
-import 'package:http/http.dart';
-import 'dart:convert';
 import 'package:world_time/services/world_time.dart';
+import 'package:flutter_spinkit/flutter_spinkit.dart';
+import 'package:world_time/services/allTimezones.dart';
+import 'package:world_time/pages/choose_location.dart';
 
 class Loading extends StatefulWidget {
   const Loading({Key? key}) : super(key: key);
@@ -13,10 +14,11 @@ class Loading extends StatefulWidget {
 }
 
 class _LoadingState extends State<Loading> {
-
   void setupWorldTime() async{
-    worldTime instance = worldTime(location: 'Berlin', flag: 'germany.png', locationUrl: 'Europe/Berlin');
+    worldTime instance = worldTime(location: 'Kolkata', flag: 'india.png', locationUrl: 'Asia/Kolkata');
     await instance.getTime();
+    await allTimeZonesReturner().returnAllTimeZones(listOfAllLocations);
+    Navigator.pushReplacementNamed(context, '/home',arguments: {'location': instance.location,'flag': instance.flag,'time':instance.time,'isDay':instance.isDay});
   }
 
   @override
@@ -28,8 +30,13 @@ class _LoadingState extends State<Loading> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey.shade400,
-      body: Text('loading screen'),
+      backgroundColor: Colors.amber,
+      body: Center(
+        child: SpinKitCircle(
+          color: Colors.white,
+          size: 50.0,
+        ),
+      ),
     );
   }
 }
