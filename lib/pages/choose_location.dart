@@ -42,7 +42,7 @@ class _ChooseLocationState extends State<ChooseLocation> {
                 },
                 title: Text(listOfAllLocations[index].location,style: TextStyle(color: Colors.grey.shade900,letterSpacing: 1.5,fontWeight: FontWeight.w300),),
                 leading: CircleAvatar(
-                  backgroundImage: NetworkImage((flag().returnFlag(listOfAllLocations,index).toString()),),
+                  backgroundImage: AssetImage('assets/logo.png'),
               ),
             )
             );
