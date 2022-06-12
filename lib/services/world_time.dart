@@ -5,7 +5,7 @@ import 'dart:convert';
 import 'package:intl/intl.dart';
 
 class worldTime{
-
+  String country;
   String location;//location name for the ui
   late String time;//the time in that location
   String flag;//url to an asset logo
@@ -15,7 +15,7 @@ class worldTime{
   late dynamic weekNo;
   late bool isDay;
   //constructor
-  worldTime({required this.location,required this.flag,required this.locationUrl});
+  worldTime({required this.location,required this.flag,required this.locationUrl,required this.country});
   //main function
   Future<void> getTime() async{
 

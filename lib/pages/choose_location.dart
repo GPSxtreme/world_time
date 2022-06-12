@@ -2,7 +2,8 @@
 
 import 'package:flutter/material.dart';
 import 'package:world_time/services/allTimezones.dart';
-import 'package:world_time/services/world_time.dart';import 'package:world_time/services/allTimezones.dart';
+import 'package:world_time/services/world_time.dart';
+import 'package:world_time/services/flagReturner.dart';
 
 List<worldTime> listOfAllLocations = [];
 class ChooseLocation extends StatefulWidget {
@@ -15,6 +16,7 @@ class ChooseLocation extends StatefulWidget {
 class _ChooseLocationState extends State<ChooseLocation> {
   Future<void> updateTime(index) async{
     worldTime instance = listOfAllLocations[index];
+    print(flag().returnFlag(listOfAllLocations,index).toString());
     await instance.getTime();
     //navigate to home screen
     Navigator.pop(context,{'location': instance.location,'flag': instance.flag,'time':instance.time,'isDay':instance.isDay,'dayOfWeek':instance.dayOfWeek,'dayOfYear':instance.dayOfYear,'weekNo':instance.weekNo});
@@ -39,7 +41,10 @@ class _ChooseLocationState extends State<ChooseLocation> {
                   updateTime(index);
                 },
                 title: Text(listOfAllLocations[index].location,style: TextStyle(color: Colors.grey.shade900,letterSpacing: 1.5,fontWeight: FontWeight.w300),),
+                leading: CircleAvatar(
+                  backgroundImage: NetworkImage((flag().returnFlag(listOfAllLocations,index).toString()),),
               ),
+            )
             );
           },
       ),
