@@ -22,9 +22,9 @@ class _ChooseLocationState extends State<ChooseLocation> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey.shade600,
+      backgroundColor: Colors.grey.shade900,
       appBar: AppBar(
-        title: Text('Choose Location',style: TextStyle(color: Colors.amberAccent),),
+        title: Text('Choose Location',style: TextStyle(color: Colors.grey.shade100),),
         centerTitle: true,
         elevation: 0,
         backgroundColor: Colors.grey.shade900,
@@ -33,12 +33,12 @@ class _ChooseLocationState extends State<ChooseLocation> {
           itemCount: listOfAllLocations.length,
           itemBuilder: (context,index){
             return Card(
-              color: Colors.grey.shade900,
+              color: Colors.grey.shade200,
               child: ListTile(
                 onTap: (){
                   updateTime(index);
                 },
-                title: Text(listOfAllLocations[index].location,style: TextStyle(color: Colors.grey.shade100,letterSpacing: 1.5,fontWeight: FontWeight.w300),),
+                title: Text(listOfAllLocations[index].location,style: TextStyle(color: Colors.grey.shade900,letterSpacing: 1.5,fontWeight: FontWeight.w300),),
               ),
             );
           },

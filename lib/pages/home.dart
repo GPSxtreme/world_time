@@ -4,6 +4,7 @@ import 'dart:ffi';
 
 import 'package:flutter/material.dart';
 import 'package:world_time/services/world_time.dart';
+import 'package:dotted_line/dotted_line.dart';
 
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
@@ -20,15 +21,24 @@ class _HomeState extends State<Home> {
   late Color bgColor;
   late Color fontColor;
   late Color timeColor;
-
+  late Color cardColor;
+  late Color cardHeadColor;
+  late Color cardTextColor;
+  late double divThicc;
+  late Color timeCard;
   @override
   Widget build(BuildContext context) {
     data = data.isNotEmpty? data: ModalRoute.of(context)?.settings.arguments as Map;
     if(data['isDay']!=null){
-      bgImg = data['isDay'] ? 'day.jpg':'night.jpg'; //setting background image
-      bgColor = data['isDay'] ? Colors.blue.shade300 : Colors.grey.shade900;//setting background colour
-      fontColor = data['isDay'] ? Colors.grey.shade900:Colors.grey.shade700;//setting font color
-      timeColor = data['isDay'] ? Colors.grey.shade800:Colors.amber;//setting font color
+      bgImg = data['isDay'] ? 'day2.png':'night2.png'; //setting background image
+      bgColor = data['isDay'] ? Colors.transparent : Colors.grey.shade900;//setting background colour
+      fontColor = data['isDay'] ? Colors.grey.shade100:Colors.white;//setting font color
+      timeColor = data['isDay'] ? Colors.grey.shade100:Colors.black;//setting font color
+      cardColor = data['isDay'] ? Colors.grey.shade100:Colors.black;//setting font color
+      cardTextColor = data['isDay'] ? Colors.grey.shade900:Colors.grey.shade300;//setting font color
+      cardHeadColor =  Colors.blueAccent;//setting font color
+      timeCard = data['isDay'] ? Colors.black:Colors.white;//setting font color
+      divThicc = data['isDay'] ? 0.5:0.1;
     }
 
     return Scaffold(
@@ -42,76 +52,98 @@ class _HomeState extends State<Home> {
               padding: const EdgeInsets.fromLTRB(0, 60, 0, 0),
               child: Column(
                 children: <Widget>[
-                  TextButton.icon(onPressed: ()async{
-                    dynamic result = await Navigator.pushNamed(context, '/location');
-                    if(result != null){
-                      setState(() {
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: <Widget>[
+                      TextButton.icon(onPressed: ()async {
+                        dynamic result = await Navigator.pushNamed(
+                        context, '/location');
+                        if (result != null) {
+                        setState(() {
                         data = {
                           'time': result['time'],
                           'location': result['location'],
                           'isDay': result['isDay'],
                           'flag': result['flag'],
-                          'dayOfWeek':result['dayOfWeek'],
-                          'dayOfYear':result['dayOfYear'],
-                          'weekNo':result['weekNo']
-                        };
-                      });
-                    }
-                    },
-                    icon: Icon(Icons.edit_location, color:fontColor,size: 30,),
-                    label: Text('Edit Location',style: TextStyle(color: fontColor,fontSize: 20,fontWeight: FontWeight.w400),), ),
-                  SizedBox(height: 20,),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: <Widget>[
-                      Text(
-                          data['location']!,
-                          style: TextStyle(
-                            fontWeight: FontWeight.w300,
-                            fontSize: 25,
-                            letterSpacing: 3.0,
-                            color: fontColor,
-                          ),
+                          'dayOfWeek': result['dayOfWeek'],
+                          'dayOfYear': result['dayOfYear'],
+                          'weekNo': result['weekNo']
+                           };
+                          });
+                          }
+                        },
+                        icon:  Icon(Icons.edit,color:fontColor,size: 20), label: Text(data['location']!.toUpperCase(), style: TextStyle(fontWeight: FontWeight.w500, fontSize: 20, letterSpacing: 3.0, color: fontColor,),),
+                      ),
+                      DottedLine(
+                        direction: Axis.horizontal,
+                        lineLength: 250,
+                        lineThickness: 0.5,
+                        dashLength: 4.0,
+                        dashRadius: 2.0,
+                        dashGapLength: 6.0,
+                        dashGapColor: Colors.transparent,
+                        dashColor: fontColor,
+                        dashGapRadius: 8.0,
                       ),
                     ],
                   ),
-                  SizedBox(height: 20,),
-                  Text(
-                    data['time']!,
-                    style: TextStyle(
-                      fontWeight: FontWeight.w600,
-                      fontSize: 60,
-                      letterSpacing: 2.0,
-                      color: timeColor,
+                  SizedBox(height: 30,),
+                  Card(
+                    color: timeCard,
+                    elevation: 0,
+                    shape: RoundedRectangleBorder(
+                        side: BorderSide(
+                          color: Colors.grey.shade800,
+                        ),
+                        borderRadius: BorderRadius.all(Radius.circular(18))
+                    ),
+                    child: SizedBox(
+                      height: 100,
+                      width: 300,
+                      child:  Center(
+                        child: Text(
+                          data['time']!,
+                          style: TextStyle(
+                            fontWeight: FontWeight.w600,
+                            fontSize: 60,
+                            letterSpacing: 2.0,
+                            color: timeColor,
+                          ),
+                        ),
+                      ),
                     ),
                   ),
                   SizedBox(height: 30,),
                   Center(
                     child: Card(
-                        color: Colors.grey.shade800,
-                        shadowColor: Colors.white,
-                        elevation: 200,
+                        color: cardColor,
                         shape: RoundedRectangleBorder(
-                          side: BorderSide(
-                            color: Colors.grey.shade800,
-                          ),
                           borderRadius: BorderRadius.all(Radius.circular(18))
                         ),
                         child: SizedBox(
                           width: 300,
                           height: 400,
                           child: Container(
-                            padding: EdgeInsets.fromLTRB(0, 30, 0, 0),
+                            padding: EdgeInsets.fromLTRB(0, 51.5, 0, 0),
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.center,
-                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                               children: <Widget>[
-                                Text('DAY OF THE WEEK',style: TextStyle(fontSize: 20,color: Colors.grey.shade300,letterSpacing: 2,fontWeight: FontWeight.w300),),
-                                Text(data['dayOfWeek'].toString(),style: TextStyle(fontSize: 30,color: Colors.amber,fontWeight: FontWeight.w400,letterSpacing: 2),),
-                                Text('DAY OF YEAR',style: TextStyle(fontSize: 20,color: Colors.grey.shade300,letterSpacing: 2,fontWeight: FontWeight.w300),),
-                                Text(data['dayOfYear'].toString(),style: TextStyle(fontSize: 35,color: Colors.amber,fontWeight: FontWeight.w400,letterSpacing: 1.5),),
-                                Text('WEEK NUMBER',style: TextStyle(fontSize: 20,color: Colors.grey.shade300,letterSpacing: 2,fontWeight: FontWeight.w300),),
-                                Text(data['weekNo'].toString(),style: TextStyle(fontSize: 35,color: Colors.amber,fontWeight: FontWeight.w400,letterSpacing: 1.5),),
+                                Text('DAY OF THE WEEK',style: TextStyle(fontSize: 18,color: cardHeadColor,letterSpacing: 2,fontWeight: FontWeight.w500),),
+                                SizedBox(height: 15,),
+                                Text(data['dayOfWeek'].toString(),style: TextStyle(fontSize: 30,color: cardTextColor,fontWeight: FontWeight.w700,letterSpacing: 2),),
+                                SizedBox(height: 20,),
+                                Divider(height: 0, thickness: divThicc, color: Colors.grey[300],indent: 50,endIndent: 50,),
+                                SizedBox(height: 20,),
+                                Text('DAY OF YEAR',style: TextStyle(fontSize: 18,color: cardHeadColor,letterSpacing: 2,fontWeight: FontWeight.w500),),
+                                SizedBox(height: 15,),
+                                Text(data['dayOfYear'].toString(),style: TextStyle(fontSize: 35,color: cardTextColor,fontWeight: FontWeight.w700,letterSpacing: 1.5),),
+                                SizedBox(height: 20,),
+                                Divider(height: 0, thickness: divThicc, color: Colors.grey[300],indent: 50,endIndent: 50,),
+                                SizedBox(height: 20,),
+                                Text('WEEK NUMBER',style: TextStyle(fontSize: 18,color: cardHeadColor,letterSpacing: 2,fontWeight: FontWeight.w500),),
+                                SizedBox(height: 15,),
+                                Text(data['weekNo'].toString(),style: TextStyle(fontSize: 35,color: cardTextColor,fontWeight: FontWeight.w700,letterSpacing: 1.5),),
                               ],
                             ),
                           ),
