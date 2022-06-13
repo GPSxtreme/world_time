@@ -16,7 +16,6 @@ class ChooseLocation extends StatefulWidget {
 class _ChooseLocationState extends State<ChooseLocation> {
   Future<void> updateTime(index) async{
     worldTime instance = listOfAllLocations[index];
-    print(flag().returnFlag(listOfAllLocations,index).toString());
     await instance.getTime();
     //navigate to home screen
     Navigator.pop(context,{'location': instance.location,'flag': instance.flag,'time':instance.time,'isDay':instance.isDay,'dayOfWeek':instance.dayOfWeek,'dayOfYear':instance.dayOfYear,'weekNo':instance.weekNo});

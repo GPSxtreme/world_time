@@ -26,7 +26,6 @@ class allTimeZonesReturner {
               flag: '$nameSubString.png',
               locationUrl: name,
           country: country));
-          print(country);
         }
       }
     }
