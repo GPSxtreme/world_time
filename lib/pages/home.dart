@@ -37,8 +37,8 @@ class _HomeState extends State<Home> {
       timeColor = data['isDay'] ? Colors.grey.shade100:Colors.black;//setting font color
       cardColor = data['isDay'] ? Colors.grey.shade100:Colors.black;//setting font color
       cardTextColor = data['isDay'] ? Colors.grey.shade900:Colors.grey.shade300;//setting font color
-      fotterTextColor = data['isDay'] ? Colors.grey.shade900:Colors.blueAccent;//setting font color
-      fotterColor = data['isDay'] ? Colors.grey.shade100:Colors.black;//setting bgColor
+      fotterTextColor = data['isDay'] ? Colors.grey.shade100:Colors.blueAccent;//setting font color
+      fotterColor = Colors.black;//setting bgColor
       cardHeadColor =  Colors.blueAccent;//setting font color
       timeCard = data['isDay'] ? Colors.black:Colors.white;//setting font color
       divThicc = data['isDay'] ? 0.5:0.1;
@@ -46,25 +46,25 @@ class _HomeState extends State<Home> {
 
     return Scaffold(
       backgroundColor:bgColor,
-      bottomNavigationBar: BottomAppBar(
-        color: fotterColor,
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: <Widget>[
-            Row(
-              children: <Widget>[
-                Text('Made by'.toUpperCase(),style: TextStyle(fontWeight: FontWeight.w800,letterSpacing: 2,color: fotterTextColor),),
-                TextButton(
-                  onPressed: _launchUrl,
-                  child: Text('GPSxtreme',style: TextStyle(fontWeight: FontWeight.w800,letterSpacing: 1.2,color: fotterTextColor,fontSize: 16)),
-                )
-              ],
-            ),
-            SizedBox(height: 40,),
-          ],
-        ),
-      ),
+      // bottomNavigationBar: BottomAppBar(
+      //   color: fotterColor,
+      //   child: Row(
+      //     mainAxisAlignment: MainAxisAlignment.center,
+      //     crossAxisAlignment: CrossAxisAlignment.center,
+      //     children: <Widget>[
+      //       Row(
+      //         children: <Widget>[
+      //           Text('Made by'.toUpperCase(),style: TextStyle(fontWeight: FontWeight.w800,letterSpacing: 2,color: fotterTextColor),),
+      //           TextButton(
+      //             onPressed: _launchUrl,
+      //             child: Text('GPSxtreme',style: TextStyle(fontWeight: FontWeight.w800,letterSpacing: 1.2,color: fotterTextColor,fontSize: 16)),
+      //           )
+      //         ],
+      //       ),
+      //       SizedBox(height: 40,),
+      //     ],
+      //   ),
+      // ),
       body: SafeArea(
           child: Container(
             decoration: BoxDecoration(
@@ -173,7 +173,32 @@ class _HomeState extends State<Home> {
                             ),
                       )
                       ),
-                    )
+                    ),
+                    Card(
+                      color: fotterColor,
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.only(bottomLeft: Radius.circular(18),bottomRight: Radius.circular(5),topLeft: Radius.circular(5),topRight: Radius.circular(18))
+                      ),
+                      child: SizedBox(
+                        height: 60,
+                        width: 300,
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: <Widget>[
+                            Row(
+                              children: <Widget>[
+                                Text('Made by'.toUpperCase(),style: TextStyle(fontWeight: FontWeight.w800,letterSpacing: 2,color: fotterTextColor),),
+                                TextButton(
+                                  onPressed: _launchUrl,
+                                  child: Text('GPSxtreme',style: TextStyle(fontWeight: FontWeight.w800,letterSpacing: 1.2,color: fotterTextColor,fontSize: 16)),
+                                )
+                              ],
+                            ),
+                            SizedBox(height: 40,),
+                          ],
+                        ),
+                      ),
+                    ),
                   ],
                 ),
               ),
@@ -184,11 +209,6 @@ class _HomeState extends State<Home> {
   }
   //methods
   void _launchUrl() async {
-    // if (await canLaunchUrl(url)) {
-    //   await launchUrl(url);
-    // } else {
-    //   throw 'Could not launch $url';
-    // }
     await launchUrl(url);
   }
 }

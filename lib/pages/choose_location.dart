@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors, use_build_context_synchronously
 
 import 'package:flutter/material.dart';
+import 'package:flutter_image/flutter_image.dart';
 import 'package:world_time/services/world_time.dart';
 
 List<worldTime> listOfAllLocations = [];
@@ -13,12 +14,14 @@ class ChooseLocation extends StatefulWidget {
 }
 
 class _ChooseLocationState extends State<ChooseLocation> {
+
   Future<void> updateTime(index) async{
     worldTime instance = listOfAllLocations[index];
     await instance.getTime();
     //navigate to home screen
     Navigator.pop(context,{'location': instance.location,'flag': instance.flag,'time':instance.time,'isDay':instance.isDay,'dayOfWeek':instance.dayOfWeek,'dayOfYear':instance.dayOfYear,'weekNo':instance.weekNo});
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -47,9 +50,9 @@ class _ChooseLocationState extends State<ChooseLocation> {
                   updateTime(index);
                 },
                 title: Text(listOfAllLocations[index].location,style: TextStyle(color: Colors.grey.shade900,letterSpacing: 1.5,fontWeight: FontWeight.w300),),
-              //   leading: CircleAvatar(
-              //     backgroundImage: AssetImage('assets/logo.png'),
-              // ),
+                leading: CircleAvatar(
+                  backgroundImage: NetworkImageWithRetry(listOfAllLocations[index].flag),
+              ),
             )
             );
           },
