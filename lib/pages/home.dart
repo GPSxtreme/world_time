@@ -71,108 +71,111 @@ class _HomeState extends State<Home> {
               image: DecorationImage(image: AssetImage('assets/$bgImg'),fit: BoxFit.cover ),
             ),
             child: Padding(
-              padding: const EdgeInsets.fromLTRB(0, 60, 0, 0),
-              child: Column(
-                children: <Widget>[
-                  Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: <Widget>[
-                      TextButton.icon(onPressed: ()async {
-                        dynamic result = await Navigator.pushNamed(
-                        context, '/location');
-                        if (result != null) {
-                        setState(() {
-                        data = {
-                          'time': result['time'],
-                          'location': result['location'],
-                          'isDay': result['isDay'],
-                          'flag': result['flag'],
-                          'dayOfWeek': result['dayOfWeek'],
-                          'dayOfYear': result['dayOfYear'],
-                          'weekNo': result['weekNo']
-                           };
-                          });
-                          }
-                        },
-                        icon:  Icon(Icons.edit,color:fontColor,size: 20), label: Text(data['location']!.toUpperCase(), style: TextStyle(fontWeight: FontWeight.w500, fontSize: 20, letterSpacing: 3.0, color: fontColor,),),
-                      ),
-                      DottedLine(
-                        direction: Axis.horizontal,
-                        lineLength: 250,
-                        lineThickness: 0.5,
-                        dashLength: 4.0,
-                        dashRadius: 2.0,
-                        dashGapLength: 6.0,
-                        dashGapColor: Colors.transparent,
-                        dashColor: fontColor,
-                        dashGapRadius: 8.0,
-                      ),
-                    ],
-                  ),
-                  SizedBox(height: 30,),
-                  Card(
-                    color: timeCard,
-                    elevation: 0,
-                    shape: RoundedRectangleBorder(
-                        side: BorderSide(
-                          color: Colors.grey.shade800,
+              padding: const EdgeInsets.fromLTRB(0, 30, 0, 0),
+              child: SingleChildScrollView(
+                scrollDirection: Axis.vertical,
+                child: Column(
+                  children: <Widget>[
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: <Widget>[
+                        TextButton.icon(onPressed: ()async {
+                          dynamic result = await Navigator.pushNamed(
+                          context, '/location');
+                          if (result != null) {
+                          setState(() {
+                          data = {
+                            'time': result['time'],
+                            'location': result['location'],
+                            'isDay': result['isDay'],
+                            'flag': result['flag'],
+                            'dayOfWeek': result['dayOfWeek'],
+                            'dayOfYear': result['dayOfYear'],
+                            'weekNo': result['weekNo']
+                             };
+                            });
+                            }
+                          },
+                          icon:  Icon(Icons.edit,color:fontColor,size: 20), label: Text(data['location']!.toUpperCase(), style: TextStyle(fontWeight: FontWeight.w500, fontSize: 20, letterSpacing: 3.0, color: fontColor,),),
                         ),
-                        borderRadius: BorderRadius.all(Radius.circular(18))
+                        DottedLine(
+                          direction: Axis.horizontal,
+                          lineLength: 250,
+                          lineThickness: 0.5,
+                          dashLength: 4.0,
+                          dashRadius: 2.0,
+                          dashGapLength: 6.0,
+                          dashGapColor: Colors.transparent,
+                          dashColor: fontColor,
+                          dashGapRadius: 8.0,
+                        ),
+                      ],
                     ),
-                    child: SizedBox(
-                      height: 100,
-                      width: 300,
-                      child:  Center(
-                        child: Text(
-                          data['time']!,
-                          style: TextStyle(
-                            fontWeight: FontWeight.w600,
-                            fontSize: 60,
-                            letterSpacing: 2.0,
-                            color: timeColor,
+                    SizedBox(height: 30,),
+                    Card(
+                      color: timeCard,
+                      elevation: 0,
+                      shape: RoundedRectangleBorder(
+                          side: BorderSide(
+                            color: Colors.grey.shade800,
                           ),
-                        ),
-                      ),
-                    ),
-                  ),
-                  SizedBox(height: 30,),
-                  Center(
-                    child: Card(
-                        color: cardColor,
-                        shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.all(Radius.circular(18))
-                        ),
-                        child: SizedBox(
-                          width: 300,
-                          height: 400,
-                          child: Container(
-                            padding: EdgeInsets.fromLTRB(0, 51.5, 0, 0),
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.center,
-                              children: <Widget>[
-                                Text('DAY OF THE WEEK',style: TextStyle(fontSize: 18,color: cardHeadColor,letterSpacing: 2,fontWeight: FontWeight.w500),),
-                                SizedBox(height: 15,),
-                                Text(data['dayOfWeek'].toString(),style: TextStyle(fontSize: 30,color: cardTextColor,fontWeight: FontWeight.w700,letterSpacing: 2),),
-                                SizedBox(height: 20,),
-                                Divider(height: 0, thickness: divThicc, color: Colors.grey[300],indent: 50,endIndent: 50,),
-                                SizedBox(height: 20,),
-                                Text('DAY OF YEAR',style: TextStyle(fontSize: 18,color: cardHeadColor,letterSpacing: 2,fontWeight: FontWeight.w500),),
-                                SizedBox(height: 15,),
-                                Text(data['dayOfYear'].toString(),style: TextStyle(fontSize: 35,color: cardTextColor,fontWeight: FontWeight.w700,letterSpacing: 1.5),),
-                                SizedBox(height: 20,),
-                                Divider(height: 0, thickness: divThicc, color: Colors.grey[300],indent: 50,endIndent: 50,),
-                                SizedBox(height: 20,),
-                                Text('WEEK NUMBER',style: TextStyle(fontSize: 18,color: cardHeadColor,letterSpacing: 2,fontWeight: FontWeight.w500),),
-                                SizedBox(height: 15,),
-                                Text(data['weekNo'].toString(),style: TextStyle(fontSize: 35,color: cardTextColor,fontWeight: FontWeight.w700,letterSpacing: 1.5),),
-                              ],
+                      ),
+                      child: SizedBox(
+                        height: 100,
+                        width: 300,
+                        child:  Center(
+                          child: Text(
+                            data['time']!,
+                            style: TextStyle(
+                              fontWeight: FontWeight.w600,
+                              fontSize: 60,
+                              letterSpacing: 2.0,
+                              color: timeColor,
                             ),
                           ),
-                    )
+                        ),
+                      ),
                     ),
-                  )
-                ],
+                    SizedBox(height: 30,),
+                    Center(
+                      child: Card(
+                          color: cardColor,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.all(Radius.circular(18))
+                          ),
+                          child: SizedBox(
+                            width: 300,
+                            height: 400,
+                            child: Container(
+                              padding: EdgeInsets.fromLTRB(0, 51.5, 0, 0),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                children: <Widget>[
+                                  Text('DAY OF THE WEEK',style: TextStyle(fontSize: 18,color: cardHeadColor,letterSpacing: 2,fontWeight: FontWeight.w500),),
+                                  SizedBox(height: 15,),
+                                  Text(data['dayOfWeek'].toString(),style: TextStyle(fontSize: 30,color: cardTextColor,fontWeight: FontWeight.w700,letterSpacing: 2),),
+                                  SizedBox(height: 20,),
+                                  Divider(height: 0, thickness: divThicc, color: Colors.grey[300],indent: 50,endIndent: 50,),
+                                  SizedBox(height: 20,),
+                                  Text('DAY OF YEAR',style: TextStyle(fontSize: 18,color: cardHeadColor,letterSpacing: 2,fontWeight: FontWeight.w500),),
+                                  SizedBox(height: 15,),
+                                  Text(data['dayOfYear'].toString(),style: TextStyle(fontSize: 35,color: cardTextColor,fontWeight: FontWeight.w700,letterSpacing: 1.5),),
+                                  SizedBox(height: 20,),
+                                  Divider(height: 0, thickness: divThicc, color: Colors.grey[300],indent: 50,endIndent: 50,),
+                                  SizedBox(height: 20,),
+                                  Text('WEEK NUMBER',style: TextStyle(fontSize: 18,color: cardHeadColor,letterSpacing: 2,fontWeight: FontWeight.w500),),
+                                  SizedBox(height: 15,),
+                                  Text(data['weekNo'].toString(),style: TextStyle(fontSize: 35,color: cardTextColor,fontWeight: FontWeight.w700,letterSpacing: 1.5),),
+                                ],
+                              ),
+                            ),
+                      )
+                      ),
+                    )
+                  ],
+                ),
               ),
             ),
           )
