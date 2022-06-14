@@ -46,25 +46,6 @@ class _HomeState extends State<Home> {
 
     return Scaffold(
       backgroundColor:bgColor,
-      // bottomNavigationBar: BottomAppBar(
-      //   color: fotterColor,
-      //   child: Row(
-      //     mainAxisAlignment: MainAxisAlignment.center,
-      //     crossAxisAlignment: CrossAxisAlignment.center,
-      //     children: <Widget>[
-      //       Row(
-      //         children: <Widget>[
-      //           Text('Made by'.toUpperCase(),style: TextStyle(fontWeight: FontWeight.w800,letterSpacing: 2,color: fotterTextColor),),
-      //           TextButton(
-      //             onPressed: _launchUrl,
-      //             child: Text('GPSxtreme',style: TextStyle(fontWeight: FontWeight.w800,letterSpacing: 1.2,color: fotterTextColor,fontSize: 16)),
-      //           )
-      //         ],
-      //       ),
-      //       SizedBox(height: 40,),
-      //     ],
-      //   ),
-      // ),
       body: SafeArea(
           child: Container(
             decoration: BoxDecoration(
@@ -174,10 +155,11 @@ class _HomeState extends State<Home> {
                       )
                       ),
                     ),
+                    SizedBox(height: 30,),
                     Card(
                       color: fotterColor,
                       shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.only(bottomLeft: Radius.circular(18),bottomRight: Radius.circular(5),topLeft: Radius.circular(5),topRight: Radius.circular(18))
+                          borderRadius: BorderRadius.all(Radius.circular(18))
                       ),
                       child: SizedBox(
                         height: 60,

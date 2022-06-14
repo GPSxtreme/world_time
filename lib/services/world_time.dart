@@ -31,7 +31,7 @@ class worldTime{
       String offSetMin = data['utc_offset'].substring(4,6);
       //set days thing
       dayOfWeek = data['day_of_week'];
-      //shit code ngl(dunno how switch works in this shit language)
+      //sry for the shitcode
       if(dayOfWeek == 0) {
         dayOfWeek = 'SUNDAY';
       }else if(dayOfWeek == 1){
