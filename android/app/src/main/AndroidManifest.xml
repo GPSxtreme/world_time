@@ -19,7 +19,7 @@
     </queries>
     <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" />
    <application
-        android:label="world_time"
+        android:label="World time"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
