@@ -36,7 +36,7 @@ class allTimeZonesReturner {
               flagUrl = flagList[key];
               break;
             }else{
-              flagUrl = 'https://images.unsplash.com/photo-1609743522653-52354461eb27?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bm90JTIwZm91bmR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60';
+              flagUrl = 'https://blog.fluidui.com/content/images/2019/01/designernews.png';
             }
           }
           list.add(worldTime(location: nameSubString,
