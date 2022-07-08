@@ -1,0 +1,1152 @@
+ [
+  {
+    "timezone": "Africa/Abidjan",
+    "country": "CI",
+    "flag": "https://countryflagsapi.com/png/ci"
+  },
+  {
+    "timezone": "Africa/Accra",
+    "country": "GH",
+    "flag": "https://countryflagsapi.com/png/gh"
+  },
+  {
+    "timezone": "Africa/Addis_Ababa",
+    "country": "ET",
+    "flag": "https://countryflagsapi.com/png/et"
+  },
+  {
+    "timezone": "Africa/Algiers",
+    "country": "DZ",
+    "flag": "https://countryflagsapi.com/png/dz"
+  },
+  {
+    "timezone": "Africa/Asmara",
+    "country": "ER",
+    "flag": "https://countryflagsapi.com/png/er"
+  },
+  {
+    "timezone": "Africa/Bamako",
+    "country": "ML",
+    "flag": "https://countryflagsapi.com/png/ml"
+  },
+  {
+    "timezone": "Africa/Bangui",
+    "country": "CF",
+    "flag": "https://countryflagsapi.com/png/cf"
+  },
+  {
+    "timezone": "Africa/Banjul",
+    "country": "GM",
+    "flag": "https://countryflagsapi.com/png/gm"
+  },
+  {
+    "timezone": "Africa/Bissau",
+    "country": "GW",
+    "flag": "https://countryflagsapi.com/png/gw"
+  },
+  {
+    "timezone": "Africa/Blantyre",
+    "country": "MW",
+    "flag": "https://countryflagsapi.com/png/mw"
+  },
+  {
+    "timezone": "Africa/Brazzaville",
+    "country": "CG",
+    "flag": "https://countryflagsapi.com/png/cg"
+  },
+  {
+    "timezone": "Africa/Bujumbura",
+    "country": "BI",
+    "flag": "https://countryflagsapi.com/png/bi"
+  },
+  {
+    "timezone": "Africa/Cairo",
+    "country": "EG",
+    "flag": "https://countryflagsapi.com/png/eg"
+  },
+  {
+    "timezone": "Africa/Casablanca",
+    "country": "MA",
+    "flag": "https://countryflagsapi.com/png/ma"
+  },
+  {
+    "timezone": "Africa/Ceuta",
+    "country": "ES",
+    "flag": "https://countryflagsapi.com/png/es"
+  },
+  {
+    "timezone": "Africa/Conakry",
+    "country": "GN",
+    "flag": "https://countryflagsapi.com/png/gn"
+  },
+  {
+    "timezone": "Africa/Dakar",
+    "country": "SN",
+    "flag": "https://countryflagsapi.com/png/sn"
+  },
+  {
+    "timezone": "Africa/Dar_es_Salaam",
+    "country": "TZ",
+    "flag": "https://countryflagsapi.com/png/tz"
+  },
+  {
+    "timezone": "Africa/Djibouti",
+    "country": "DJ",
+    "flag": "https://countryflagsapi.com/png/dj"
+  },
+  {
+    "timezone": "Africa/Douala",
+    "country": "CM",
+    "flag": "https://countryflagsapi.com/png/cm"
+  },
+  {
+    "timezone": "Africa/El_Aaiun",
+    "country": "EH",
+    "flag": "https://countryflagsapi.com/png/eh"
+  },
+  {
+    "timezone": "Africa/Freetown",
+    "country": "SL",
+    "flag": "https://countryflagsapi.com/png/sl"
+  },
+  {
+    "timezone": "Africa/Gaborone",
+    "country": "BW",
+    "flag": "https://countryflagsapi.com/png/bw"
+  },
+  {
+    "timezone": "Africa/Harare",
+    "country": "ZW",
+    "flag": "https://countryflagsapi.com/png/zw"
+  },
+  {
+    "timezone": "Africa/Johannesburg",
+    "country": "ZA",
+    "flag": "https://countryflagsapi.com/png/za"
+  },
+  {
+    "timezone": "Africa/Juba",
+    "country": "SS",
+    "flag": "https://countryflagsapi.com/png/ss"
+  },
+  {
+    "timezone": "Africa/Kampala",
+    "country": "UG",
+    "flag": "https://countryflagsapi.com/png/ug"
+  },
+  {
+    "timezone": "Africa/Khartoum",
+    "country": "SD",
+    "flag": "https://countryflagsapi.com/png/sd"
+  },
+  {
+    "timezone": "Africa/Kigali",
+    "country": "RW",
+    "flag": "https://countryflagsapi.com/png/rw"
+  },
+  {
+    "timezone": "Africa/Kinshasa",
+    "country": "CD",
+    "flag": "https://countryflagsapi.com/png/cd"
+  },
+  {
+    "timezone": "Africa/Lagos",
+    "country": "NG",
+    "flag": "https://countryflagsapi.com/png/ng"
+  },
+  {
+    "timezone": "Africa/Libreville",
+    "country": "GA",
+    "flag": "https://countryflagsapi.com/png/ga"
+  },
+  {
+    "timezone": "Africa/Lome",
+    "country": "TG",
+    "flag": "https://countryflagsapi.com/png/tg"
+  },
+  {
+    "timezone": "Africa/Luanda",
+    "country": "AO",
+    "flag": "https://countryflagsapi.com/png/ao"
+  },
+  {
+    "timezone": "Africa/Lubumbashi",
+    "country": "CD",
+    "flag": "https://countryflagsapi.com/png/cd"
+  },
+  {
+    "timezone": "Africa/Lusaka",
+    "country": "ZM",
+    "flag": "https://countryflagsapi.com/png/zm"
+  },
+  {
+    "timezone": "Africa/Malabo",
+    "country": "GQ",
+    "flag": "https://countryflagsapi.com/png/gq"
+  },
+  {
+    "timezone": "Africa/Maputo",
+    "country": "MZ",
+    "flag": "https://countryflagsapi.com/png/mz"
+  },
+  {
+    "timezone": "Africa/Maseru",
+    "country": "LS",
+    "flag": "https://countryflagsapi.com/png/ls"
+  },
+  {
+    "timezone": "Africa/Mbabane",
+    "country": "SZ",
+    "flag": "https://countryflagsapi.com/png/sz"
+  },
+  {
+    "timezone": "Africa/Mogadishu",
+    "country": "SO",
+    "flag": "https://countryflagsapi.com/png/so"
+  },
+  {
+    "timezone": "Africa/Monrovia",
+    "country": "LR",
+    "flag": "https://countryflagsapi.com/png/lr"
+  },
+  {
+    "timezone": "Africa/Nairobi",
+    "country": "KE",
+    "flag": "https://countryflagsapi.com/png/ke"
+  },
+  {
+    "timezone": "Africa/Ndjamena",
+    "country": "TD",
+    "flag": "https://countryflagsapi.com/png/td"
+  },
+  {
+    "timezone": "Africa/Niamey",
+    "country": "NE",
+    "flag": "https://countryflagsapi.com/png/ne"
+  },
+  {
+    "timezone": "Africa/Nouakchott",
+    "country": "MR",
+    "flag": "https://countryflagsapi.com/png/mr"
+  },
+  {
+    "timezone": "Africa/Ouagadougou",
+    "country": "BF",
+    "flag": "https://countryflagsapi.com/png/bf"
+  },
+  {
+    "timezone": "Africa/Porto-Novo",
+    "country": "BJ",
+    "flag": "https://countryflagsapi.com/png/bj"
+  },
+  {
+    "timezone": "Africa/Sao_Tome",
+    "country": "ST",
+    "flag": "https://countryflagsapi.com/png/st"
+  },
+  {
+    "timezone": "Africa/Tripoli",
+    "country": "LY",
+    "flag": "https://countryflagsapi.com/png/ly"
+  },
+  {
+    "timezone": "Africa/Tunis",
+    "country": "TN",
+    "flag": "https://countryflagsapi.com/png/tn"
+  },
+  {
+    "timezone": "Africa/Windhoek",
+    "country": "NA",
+    "flag": "https://countryflagsapi.com/png/na"
+  },
+  {
+    "timezone": "America/Adak",
+    "country": "US",
+    "flag": "https://countryflagsapi.com/png/us"
+  },
+  {
+    "timezone": "America/Anchorage",
+    "country": "US",
+    "flag": "https://countryflagsapi.com/png/us"
+  },
+  {
+    "timezone": "America/Anguilla",
+    "country": "AI",
+    "flag": "https://countryflagsapi.com/png/ai"
+  },
+  {
+    "timezone": "America/Antigua",
+    "country": "AG",
+    "flag": "https://countryflagsapi.com/png/ag"
+  },
+  {
+    "timezone": "America/Araguaina",
+    "country": "BR",
+    "flag": "https://countryflagsapi.com/png/br"
+  },
+  {
+    "timezone": "America/Argentina/Buenos_Aires",
+    "country": "AR",
+    "flag": "https://countryflagsapi.com/png/ar"
+  },
+  {
+    "timezone": "America/Argentina/Catamarca",
+    "country": "AR",
+    "flag": "https://countryflagsapi.com/png/ar"
+  },
+  {
+    "timezone": "America/Argentina/Cordoba",
+    "country": "AR",
+    "flag": "https://countryflagsapi.com/png/ar"
+  },
+  {
+    "timezone": "America/Argentina/Jujuy",
+    "country": "AR",
+    "flag": "https://countryflagsapi.com/png/ar"
+  },
+  {
+    "timezone": "America/Argentina/La_Rioja",
+    "country": "AR",
+    "flag": "https://countryflagsapi.com/png/ar"
+  },
+  {
+    "timezone": "America/Argentina/Mendoza",
+    "country": "AR",
+    "flag": "https://countryflagsapi.com/png/ar"
+  },
+  {
+    "timezone": "America/Argentina/Rio_Gallegos",
+    "country": "AR",
+    "flag": "https://countryflagsapi.com/png/ar"
+  },
+  {
+    "timezone": "America/Argentina/Salta",
+    "country": "AR",
+    "flag": "https://countryflagsapi.com/png/ar"
+  },
+  {
+    "timezone": "America/Argentina/San_Juan",
+    "country": "AR",
+    "flag": "https://countryflagsapi.com/png/ar"
+  },
+  {
+    "timezone": "America/Argentina/San_Luis",
+    "country": "AR",
+    "flag": "https://countryflagsapi.com/png/ar"
+  },
+  {
+    "timezone": "America/Argentina/Tucuman",
+    "country": "AR",
+    "flag": "https://countryflagsapi.com/png/ar"
+  },
+  {
+    "timezone": "America/Argentina/Ushuaia",
+    "country": "AR",
+    "flag": "https://countryflagsapi.com/png/ar"
+  },
+  {
+    "timezone": "America/Aruba",
+    "country": "AW",
+    "flag": "https://countryflagsapi.com/png/aw"
+  },
+  {
+    "timezone": "America/Asuncion",
+    "country": "PY",
+    "flag": "https://countryflagsapi.com/png/py"
+  },
+  {
+    "timezone": "America/Atikokan",
+    "country": "CA",
+    "flag": "https://countryflagsapi.com/png/ca"
+  },
+  {
+    "timezone": "America/Bahia",
+    "country": "BR",
+    "flag": "https://countryflagsapi.com/png/br"
+  },
+  {
+    "timezone": "America/Bahia_Banderas",
+    "country": "MX",
+    "flag": "https://countryflagsapi.com/png/mx"
+  },
+  {
+    "timezone": "America/Barbados",
+    "country": "BB",
+    "flag": "https://countryflagsapi.com/png/bb"
+  },
+  {
+    "timezone": "America/Belem",
+    "country": "BR",
+    "flag": "https://countryflagsapi.com/png/br"
+  },
+  {
+    "timezone": "America/Belize",
+    "country": "BZ",
+    "flag": "https://countryflagsapi.com/png/bz"
+  },
+  {
+    "timezone": "America/Blanc-Sablon",
+    "country": "CA",
+    "flag": "https://countryflagsapi.com/png/ca"
+  },
+  {
+    "timezone": "America/Boa_Vista",
+    "country": "BR",
+    "flag": "https://countryflagsapi.com/png/br"
+  },
+  {
+    "timezone": "America/Bogota",
+    "country": "CO",
+    "flag": "https://countryflagsapi.com/png/co"
+  },
+  {
+    "timezone": "America/Boise",
+    "country": "US",
+    "flag": "https://countryflagsapi.com/png/us"
+  },
+  {
+    "timezone": "America/Cambridge_Bay",
+    "country": "CA",
+    "flag": "https://countryflagsapi.com/png/ca"
+  },
+  {
+    "timezone": "America/Campo_Grande",
+    "country": "BR",
+    "flag": "https://countryflagsapi.com/png/br"
+  },
+  {
+    "timezone": "America/Cancun",
+    "country": "MX",
+    "flag": "https://countryflagsapi.com/png/mx"
+  },
+  {
+    "timezone": "America/Caracas",
+    "country": "VE",
+    "flag": "https://countryflagsapi.com/png/ve"
+  },
+  {
+    "timezone": "America/Cayenne",
+    "country": "GF",
+    "flag": "https://countryflagsapi.com/png/gf"
+  },
+  {
+    "timezone": "America/Cayman",
+    "country": "KY",
+    "flag": "https://countryflagsapi.com/png/ky"
+  },
+  {
+    "timezone": "America/Chicago",
+    "country": "US",
+    "flag": "https://countryflagsapi.com/png/us"
+  },
+  {
+    "timezone": "America/Chihuahua",
+    "country": "MX",
+    "flag": "https://countryflagsapi.com/png/mx"
+  },
+  {
+    "timezone": "America/Costa_Rica",
+    "country": "CR",
+    "flag": "https://countryflagsapi.com/png/cr"
+  },
+  {
+    "timezone": "America/Creston",
+    "country": "CA",
+    "flag": "https://countryflagsapi.com/png/ca"
+  },
+  {
+    "timezone": "America/Cuiaba",
+    "country": "BR",
+    "flag": "https://countryflagsapi.com/png/br"
+  },
+  {
+    "timezone": "America/Curacao",
+    "country": "CW",
+    "flag": "https://countryflagsapi.com/png/cw"
+  },
+  {
+    "timezone": "America/Danmarkshavn",
+    "country": "GL",
+    "flag": "https://countryflagsapi.com/png/gl"
+  },
+  {
+    "timezone": "America/Dawson",
+    "country": "CA",
+    "flag": "https://countryflagsapi.com/png/ca"
+  },
+  {
+    "timezone": "America/Dawson_Creek",
+    "country": "CA",
+    "flag": "https://countryflagsapi.com/png/ca"
+  },
+  {
+    "timezone": "America/Denver",
+    "country": "US",
+    "flag": "https://countryflagsapi.com/png/us"
+  },
+  {
+    "timezone": "America/Detroit",
+    "country": "US",
+    "flag": "https://countryflagsapi.com/png/us"
+  },
+  {
+    "timezone": "America/Dominica",
+    "country": "DM",
+    "flag": "https://countryflagsapi.com/png/dm"
+  },
+  {
+    "timezone": "America/Edmonton",
+    "country": "CA",
+    "flag": "https://countryflagsapi.com/png/ca"
+  },
+  {
+    "timezone": "America/Eirunepe",
+    "country": "BR",
+    "flag": "https://countryflagsapi.com/png/br"
+  },
+  {
+    "timezone": "America/El_Salvador",
+    "country": "SV",
+    "flag": "https://countryflagsapi.com/png/sv"
+  },
+  {
+    "timezone": "America/Fortaleza",
+    "country": "BR",
+    "flag": "https://countryflagsapi.com/png/br"
+  },
+  {
+    "timezone": "America/Glace_Bay",
+    "country": "CA",
+    "flag": "https://countryflagsapi.com/png/ca"
+  },
+  {
+    "timezone": "America/Godthab",
+    "country": "GL",
+    "flag": "https://countryflagsapi.com/png/gl"
+  },
+  {
+    "timezone": "America/Goose_Bay",
+    "country": "CA",
+    "flag": "https://countryflagsapi.com/png/ca"
+  },
+  {
+    "timezone": "America/Grand_Turk",
+    "country": "TC",
+    "flag": "https://countryflagsapi.com/png/tc"
+  },
+  {
+    "timezone": "America/Grenada",
+    "country": "GD",
+    "flag": "https://countryflagsapi.com/png/gd"
+  },
+  {
+    "timezone": "America/Guadeloupe",
+    "country": "GP",
+    "flag": "https://countryflagsapi.com/png/gp"
+  },
+  {
+    "timezone": "America/Guatemala",
+    "country": "GT",
+    "flag": "https://countryflagsapi.com/png/gt"
+  },
+  {
+    "timezone": "America/Guayaquil",
+    "country": "EC",
+    "flag": "https://countryflagsapi.com/png/ec"
+  },
+  {
+    "timezone": "America/Guyana",
+    "country": "GY",
+    "flag": "https://countryflagsapi.com/png/gy"
+  },
+  {
+    "timezone": "America/Halifax",
+    "country": "CA",
+    "flag": "https://countryflagsapi.com/png/ca"
+  },
+  {
+    "timezone": "America/Havana",
+    "country": "CU",
+    "flag": "https://countryflagsapi.com/png/cu"
+  },
+  {
+    "timezone": "America/Hermosillo",
+    "country": "MX",
+    "flag": "https://countryflagsapi.com/png/mx"
+  },
+  {
+    "timezone": "America/Indiana/Indianapolis",
+    "country": "US",
+    "flag": "https://countryflagsapi.com/png/us"
+  },
+  {
+    "timezone": "America/Indiana/Knox",
+    "country": "US",
+    "flag": "https://countryflagsapi.com/png/us"
+  },
+  {
+    "timezone": "America/Indiana/Marengo",
+    "country": "US",
+    "flag": "https://countryflagsapi.com/png/us"
+  },
+  {
+    "timezone": "America/Indiana/Petersburg",
+    "country": "US",
+    "flag": "https://countryflagsapi.com/png/us"
+  },
+  {
+    "timezone": "America/Indiana/Tell_City",
+    "country": "US",
+    "flag": "https://countryflagsapi.com/png/us"
+  },
+  {
+    "timezone": "America/Indiana/Vevay",
+    "country": "US",
+    "flag": "https://countryflagsapi.com/png/us"
+  },
+  {
+    "timezone": "America/Indiana/Vincennes",
+    "country": "US",
+    "flag": "https://countryflagsapi.com/png/us"
+  },
+  {
+    "timezone": "America/Indiana/Winamac",
+    "country": "US",
+    "flag": "https://countryflagsapi.com/png/us"
+  },
+  {
+    "timezone": "America/Inuvik",
+    "country": "CA",
+    "flag": "https://countryflagsapi.com/png/ca"
+  },
+  {
+    "timezone": "America/Iqaluit",
+    "country": "CA",
+    "flag": "https://countryflagsapi.com/png/ca"
+  },
+  {
+    "timezone": "America/Jamaica",
+    "country": "JM",
+    "flag": "https://countryflagsapi.com/png/jm"
+  },
+  {
+    "timezone": "America/Juneau",
+    "country": "US",
+    "flag": "https://countryflagsapi.com/png/us"
+  },
+  {
+    "timezone": "America/Kentucky/Louisville",
+    "country": "US",
+    "flag": "https://countryflagsapi.com/png/us"
+  },
+  {
+    "timezone": "America/Kentucky/Monticello",
+    "country": "US",
+    "flag": "https://countryflagsapi.com/png/us"
+  },
+  {
+    "timezone": "America/La_Paz",
+    "country": "BO",
+    "flag": "https://countryflagsapi.com/png/bo"
+  },
+  {
+    "timezone": "America/Lima",
+    "country": "PE",
+    "flag": "https://countryflagsapi.com/png/pe"
+  },
+  {
+    "timezone": "America/Los_Angeles",
+    "country": "US",
+    "flag": "https://countryflagsapi.com/png/us"
+  },
+  {
+    "timezone": "America/Maceio",
+    "country": "BR",
+    "flag": "https://countryflagsapi.com/png/br"
+  },
+  {
+    "timezone": "America/Managua",
+    "country": "NI",
+    "flag": "https://countryflagsapi.com/png/ni"
+  },
+  {
+    "timezone": "America/Manaus",
+    "country": "BR",
+    "flag": "https://countryflagsapi.com/png/br"
+  },
+  {
+    "timezone": "America/Martinique",
+    "country": "MQ",
+    "flag": "https://countryflagsapi.com/png/mq"
+  },
+  {
+    "timezone": "America/Matamoros",
+    "country": "MX",
+    "flag": "https://countryflagsapi.com/png/mx"
+  },
+  {
+    "timezone": "America/Mazatlan",
+    "country": "MX",
+    "flag": "https://countryflagsapi.com/png/mx"
+  },
+  {
+    "timezone": "America/Menominee",
+    "country": "US",
+    "flag": "https://countryflagsapi.com/png/us"
+  },
+  {
+    "timezone": "America/Merida",
+    "country": "MX",
+    "flag": "https://countryflagsapi.com/png/mx"
+  },
+  {
+    "timezone": "America/Mexico_City",
+    "country": "MX",
+    "flag": "https://countryflagsapi.com/png/mx"
+  },
+  {
+    "timezone": "America/Miquelon",
+    "country": "PM",
+    "flag": "https://countryflagsapi.com/png/pm"
+  },
+  {
+    "timezone": "America/Moncton",
+    "country": "CA",
+    "flag": "https://countryflagsapi.com/png/ca"
+  },
+  {
+    "timezone": "America/Monterrey",
+    "country": "MX",
+    "flag": "https://countryflagsapi.com/png/mx"
+  },
+  {
+    "timezone": "America/Montevideo",
+    "country": "UY",
+    "flag": "https://countryflagsapi.com/png/uy"
+  },
+  {
+    "timezone": "America/Montreal",
+    "country": "CA",
+    "flag": "https://countryflagsapi.com/png/ca"
+  },
+  {
+    "timezone": "America/Montserrat",
+    "country": "MS",
+    "flag": "https://countryflagsapi.com/png/ms"
+  },
+  {
+    "timezone": "America/Nassau",
+    "country": "BS",
+    "flag": "https://countryflagsapi.com/png/bs"
+  },
+  {
+    "timezone": "America/New_York",
+    "country": "US",
+    "flag": "https://countryflagsapi.com/png/us"
+  },
+  {
+    "timezone": "America/Nipigon",
+    "country": "CA",
+    "flag": "https://countryflagsapi.com/png/ca"
+  },
+  {
+    "timezone": "America/Nome",
+    "country": "US",
+    "flag": "https://countryflagsapi.com/png/us"
+  },
+  {
+    "timezone": "America/Noronha",
+    "country": "BR",
+    "flag": "https://countryflagsapi.com/png/br"
+  },
+  {
+    "timezone": "America/North_Dakota/Beulah",
+    "country": "US",
+    "flag": "https://countryflagsapi.com/png/us"
+  },
+  {
+    "timezone": "America/North_Dakota/Center",
+    "country": "US",
+    "flag": "https://countryflagsapi.com/png/us"
+  },
+  {
+    "timezone": "America/North_Dakota/New_Salem",
+    "country": "US",
+    "flag": "https://countryflagsapi.com/png/us"
+  },
+  {
+    "timezone": "America/Ojinaga",
+    "country": "MX",
+    "flag": "https://countryflagsapi.com/png/mx"
+  },
+  {
+    "timezone": "America/Panama",
+    "country": "PA",
+    "flag": "https://countryflagsapi.com/png/pa"
+  },
+  {
+    "timezone": "America/Pangnirtung",
+    "country": "CA",
+    "flag": "https://countryflagsapi.com/png/ca"
+  },
+  {
+    "timezone": "America/Paramaribo",
+    "country": "SR",
+    "flag": "https://countryflagsapi.com/png/sr"
+  },
+  {
+    "timezone": "America/Phoenix",
+    "country": "US",
+    "flag": "https://countryflagsapi.com/png/us"
+  },
+  {
+    "timezone": "America/Port-au-Prince",
+    "country": "HT",
+    "flag": "https://countryflagsapi.com/png/ht"
+  },
+  {
+    "timezone": "America/Port_of_Spain",
+    "country": "TT",
+    "flag": "https://countryflagsapi.com/png/tt"
+  },
+  {
+    "timezone": "America/Porto_Velho",
+    "country": "BR",
+    "flag": "https://countryflagsapi.com/png/br"
+  },
+  {
+    "timezone": "America/Puerto_Rico",
+    "country": "PR",
+    "flag": "https://countryflagsapi.com/png/pr"
+  },
+  {
+    "timezone": "America/Rainy_River",
+    "country": "CA",
+    "flag": "https://countryflagsapi.com/png/ca"
+  },
+  {
+    "timezone": "America/Rankin_Inlet",
+    "country": "CA",
+    "flag": "https://countryflagsapi.com/png/ca"
+  },
+  {
+    "timezone": "America/Recife",
+    "country": "BR",
+    "flag": "https://countryflagsapi.com/png/br"
+  },
+  {
+    "timezone": "America/Regina",
+    "country": "CA",
+    "flag": "https://countryflagsapi.com/png/ca"
+  },
+  {
+    "timezone": "America/Resolute",
+    "country": "CA",
+    "flag": "https://countryflagsapi.com/png/ca"
+  },
+  {
+    "timezone": "America/Rio_Branco",
+    "country": "BR",
+    "flag": "https://countryflagsapi.com/png/br"
+  },
+  {
+    "timezone": "America/Santa_Isabel",
+    "country": "MX",
+    "flag": "https://countryflagsapi.com/png/mx"
+  },
+  {
+    "timezone": "America/Santarem",
+    "country": "BR",
+    "flag": "https://countryflagsapi.com/png/br"
+  },
+  {
+    "timezone": "America/Santiago",
+    "country": "CL",
+    "flag": "https://countryflagsapi.com/png/cl"
+  },
+  {
+    "timezone": "America/Santo_Domingo",
+    "country": "DO",
+    "flag": "https://countryflagsapi.com/png/do"
+  },
+  {
+    "timezone": "America/Sao_Paulo",
+    "country": "BR",
+    "flag": "https://countryflagsapi.com/png/br"
+  },
+  {
+    "timezone": "America/Scoresbysund",
+    "country": "GL",
+    "flag": "https://countryflagsapi.com/png/gl"
+  },
+  {
+    "timezone": "America/Sitka",
+    "country": "US",
+    "flag": "https://countryflagsapi.com/png/us"
+  },
+  {
+    "timezone": "America/St_Barthelemy",
+    "country": "BL",
+    "flag": "https://countryflagsapi.com/png/bl"
+  },
+  {
+    "timezone": "America/St_Johns",
+    "country": "CA",
+    "flag": "https://countryflagsapi.com/png/ca"
+  },
+  {
+    "timezone": "America/St_Kitts",
+    "country": "KN",
+    "flag": "https://countryflagsapi.com/png/kn"
+  },
+  {
+    "timezone": "America/St_Lucia",
+    "country": "LC",
+    "flag": "https://countryflagsapi.com/png/lc"
+  },
+  {
+    "timezone": "America/St_Thomas",
+    "country": "VI",
+    "flag": "https://countryflagsapi.com/png/vi"
+  },
+  {
+    "timezone": "America/St_Vincent",
+    "country": "VC",
+    "flag": "https://countryflagsapi.com/png/vc"
+  },
+  {
+    "timezone": "America/Swift_Current",
+    "country": "CA",
+    "flag": "https://countryflagsapi.com/png/ca"
+  },
+  {
+    "timezone": "America/Tegucigalpa",
+    "country": "HN",
+    "flag": "https://countryflagsapi.com/png/hn"
+  },
+  {
+    "timezone": "America/Thule",
+    "country": "GL",
+    "flag": "https://countryflagsapi.com/png/gl"
+  },
+  {
+    "timezone": "America/Thunder_Bay",
+    "country": "CA",
+    "flag": "https://countryflagsapi.com/png/ca"
+  },
+  {
+    "timezone": "America/Tijuana",
+    "country": "MX",
+    "flag": "https://countryflagsapi.com/png/mx"
+  },
+  {
+    "timezone": "America/Toronto",
+    "country": "CA",
+    "flag": "https://countryflagsapi.com/png/ca"
+  },
+  {
+    "timezone": "America/Tortola",
+    "country": "VG",
+    "flag": "https://countryflagsapi.com/png/vg"
+  },
+  {
+    "timezone": "America/Vancouver",
+    "country": "CA",
+    "flag": "https://countryflagsapi.com/png/ca"
+  },
+  {
+    "timezone": "America/Whitehorse",
+    "country": "CA",
+    "flag": "https://countryflagsapi.com/png/ca"
+  },
+  {
+    "timezone": "America/Winnipeg",
+    "country": "CA",
+    "flag": "https://countryflagsapi.com/png/ca"
+  },
+  {
+    "timezone": "America/Yakutat",
+    "country": "US",
+    "flag": "https://countryflagsapi.com/png/us"
+  },
+  {
+    "timezone": "America/Yellowknife",
+    "country": "CA",
+    "flag": "https://countryflagsapi.com/png/ca"
+  },
+  {
+    "timezone": "Antarctica/Casey",
+    "country": "AQ",
+    "flag": "https://countryflagsapi.com/png/aq"
+  },
+  {
+    "timezone": "Antarctica/Davis",
+    "country": "AQ",
+    "flag": "https://countryflagsapi.com/png/aq"
+  },
+  {
+    "timezone": "Antarctica/DumontDUrville",
+    "country": "AQ",
+    "flag": "https://countryflagsapi.com/png/aq"
+  },
+  {
+    "timezone": "Antarctica/Macquarie",
+    "country": "AU",
+    "flag": "https://countryflagsapi.com/png/au"
+  },
+  {
+    "timezone": "Antarctica/Mawson",
+    "country": "AQ",
+    "flag": "https://countryflagsapi.com/png/aq"
+  },
+  {
+    "timezone": "Antarctica/McMurdo",
+    "country": "AQ",
+    "flag": "https://countryflagsapi.com/png/aq"
+  },
+  {
+    "timezone": "Antarctica/Palmer",
+    "country": "AQ",
+    "flag": "https://countryflagsapi.com/png/aq"
+  },
+  {
+    "timezone": "Antarctica/Rothera",
+    "country": "AQ",
+    "flag": "https://countryflagsapi.com/png/aq"
+  },
+  {
+    "timezone": "Antarctica/Syowa",
+    "country": "AQ",
+    "flag": "https://countryflagsapi.com/png/aq"
+  },
+  {
+    "timezone": "Antarctica/Troll",
+    "country": "AQ",
+    "flag": "https://countryflagsapi.com/png/aq"
+  },
+  {
+    "timezone": "Antarctica/Vostok",
+    "country": "AQ",
+    "flag": "https://countryflagsapi.com/png/aq"
+  },
+  {
+    "timezone": "Arctic/Longyearbyen",
+    "country": "SJ",
+    "flag": "https://countryflagsapi.com/png/sj"
+  },
+  {
+    "timezone": "Asia/Aden",
+    "country": "YE",
+    "flag": "https://countryflagsapi.com/png/ye"
+  },
+  {
+    "timezone": "Asia/Almaty",
+    "country": "KZ",
+    "flag": "https://countryflagsapi.com/png/kz"
+  },
+  {
+    "timezone": "Asia/Amman",
+    "country": "JO",
+    "flag": "https://countryflagsapi.com/png/jo"
+  },
+  {
+    "timezone": "Asia/Anadyr",
+    "country": "RU",
+    "flag": "https://countryflagsapi.com/png/ru"
+  },
+  {
+    "timezone": "Asia/Aqtau",
+    "country": "KZ",
+    "flag": "https://countryflagsapi.com/png/kz"
+  },
+  {
+    "timezone": "Asia/Aqtobe",
+    "country": "KZ",
+    "flag": "https://countryflagsapi.com/png/kz"
+  },
+  {
+    "timezone": "Asia/Ashgabat",
+    "country": "TM",
+    "flag": "https://countryflagsapi.com/png/tm"
+  },
+  {
+    "timezone": "Asia/Baghdad",
+    "country": "IQ",
+    "flag": "https://countryflagsapi.com/png/iq"
+  },
+  {
+    "timezone": "Asia/Bahrain",
+    "country": "BH",
+    "flag": "https://countryflagsapi.com/png/bh"
+  },
+  {
+    "timezone": "Asia/Baku",
+    "country": "AZ",
+    "flag": "https://countryflagsapi.com/png/az"
+  },
+  {
+    "timezone": "Asia/Bangkok",
+    "country": "TH",
+    "flag": "https://countryflagsapi.com/png/th"
+  },
+  {
+    "timezone": "Asia/Beirut",
+    "country": "LB",
+    "flag": "https://countryflagsapi.com/png/lb"
+  },
+  {
+    "timezone": "Asia/Bishkek",
+    "country": "KG",
+    "flag": "https://countryflagsapi.com/png/kg"
+  },
+  {
+    "timezone": "Asia/Brunei",
+    "country": "BN",
+    "flag": "https://countryflagsapi.com/png/bn"
+  },
+  {
+    "timezone": "Asia/Choibalsan",
+    "country": "MN",
+    "flag": "https://countryflagsapi.com/png/mn"
+  },
+  {
+    "timezone": "Asia/Colombo",
+    "country": "LK",
+    "flag": "https://countryflagsapi.com/png/lk"
+  },
+  {
+    "timezone": "Asia/Damascus",
+    "country": "SY",
+    "flag": "https://countryflagsapi.com/png/sy"
+  },
+  {
+    "timezone": "Asia/Dhaka",
+    "country": "BD",
+    "flag": "https://countryflagsapi.com/png/bd"
+  },
+  {
+    "timezone": "Asia/Dili",
+    "country": "TL",
+    "flag": "https://countryflagsapi.com/png/tl"
+  },
+  {
+    "timezone": "Asia/Dubai",
+    "country": "AE",
+    "flag": "https://countryflagsapi.com/png/ae"
+  },
+  {
+    "timezone": "Asia/Dushanbe",
+    "country": "TJ",
+    "flag": "https://countryflagsapi.com/png/tj"
+  },
+  {
+    "timezone": "Asia/Famagusta",
+    "country": "CY",
+    "flag": "https://countryflagsapi.com/png/cy"
+  },
+  {
+    "timezone": "Asia/Gaza",
+    "country": "PS",
+    "flag": "https://countryflagsapi.com/png/ps"
+  }
+]
